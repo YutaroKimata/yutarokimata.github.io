@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Yutaro Kimata – Ph.D. Student, Economics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/your-kit-id.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      /* ---------- GLOBAL STYLES ---------- */
+      :root {
+        --primary: #004d99; /* deep blue – feel free to change */
+        --accent: #ff6600; /* orange accent */
+        --bg: #f9f9f9;
+        --text: #333;
+        --link-hover: #e60000;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+      a:hover,
+      a:focus {
+        color: var(--link-hover);
+      }
+
+      header {
+        background: var(--primary);
+        color: #fff;
+        padding: 2rem 0;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0.5rem 0;
+        font-size: 2.8rem;
+      }
+      header p {
+        margin: 0;
+        font-weight: 300;
+      }
+      .container {
+        color: #333; /* デフォルトを本文色に */
+        width: 90%;
+        max-width: 960px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+      }
+
+      /* ---------- ABOUT SECTION ---------- */
+      .about {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .about img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        margin-right: 1.5rem;
+        object-fit: cover;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+      }
+      .about div {
+        flex: 1;
+        min-width: 250px;
+      }
+
+      /* ---------- RESEARCH SECTION ---------- */
+      .section-title {
+        font-size: 1.6rem;
+        margin-top: 1.5rem;
+        color: var(--primary);
+        border-bottom: 2px solid var(--accent);
+        display: inline-block;
+        padding-bottom: 4px;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      li::before {
+        content: "\f058";
+        font-family: "Font Awesome 6 Free";
+        margin-right: 0.5rem;
+        color: var(--accent);
+      }
+
+      /* ---------- CONTACT SECTION ---------- */
+      .contact-icons a {
+        display: inline-block;
+        margin-right: 1.2rem;
+        font-size: 1.8rem;
+        color: #555;
+      }
+      .contact-icons a:hover {
+        color: var(--primary);
+      }
+
+      /* ---------- FOOTER ---------- */
+      footer {
+        text-align: center;
+        padding: 1rem 0;
+        background: #eee;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+      }
+
+      /* ---------- RESPONSIVE ---------- */
+      @media (max-width: 600px) {
+        .about {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .about img {
+          margin-bottom: 1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Yutaro Kimata</h1>
+      <p>
+        Ph.D. Student, Department of Economics<br />
+        Nagoya City University
+      </p>
+    </header>
+
+    <div class="container">
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="about">
+          <!-- <img src="your-photo.jpg" alt="Photo of Yutaro Kimata" /> -->
+          <div>
+            <h2 class="section-title">About Me</h2>
+            <p>
+              My name is <strong>Yutaro Kimata</strong>, and I am a Ph.D.
+              student in Economics at <strong>Nagoya City University</strong> in
+              Japan. My research focuses on international trade and its
+              implications for economic welfare, with particular interest in how
+              trade agreements, tariff policies, and technological change
+              influence outcomes across countries.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESEARCH -->
+      <section id="research">
+        <h2 class="section-title">Research Focus</h2>
+        <ul>
+          <li>
+            <strong>Causal Inference</strong>: I analyze how trade policy
+            interventions, such as the formation of regional trade agreements or
+            the imposition of tariffs, causally affect international trade
+            flows. My work employs Difference-in-Differences and related
+            econometric approaches to provide credible identification of policy
+            impacts.
+          </li>
+          <li>
+            <strong>Structural Gravity</strong>: I structurally estimate trade
+            elasticities to uncover how sensitive trade flows are to changes in
+            trade costs. This research provides the empirical foundation for
+            counterfactual policy analysis and connects observed trade patterns
+            with theory-based parameters.
+          </li>
+          <li>
+            <strong>New Quantitative Trade</strong>: I develop and apply
+            multi-country, multi-sector Ricardian general equilibrium models to
+            quantify the welfare and production effects of policy shocks. In
+            particular, I investigate how emerging technologies such as AI
+            reshape comparative advantage and global welfare through
+            international trade.
+          </li>
+        </ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <p>Email: kimata.yutaro [at] gmail.com</p>
+      </section>
+    </div>
+
+    <footer>© 2025 Yutaro Kimata – All rights reserved</footer>
+  </body>
+</html>
