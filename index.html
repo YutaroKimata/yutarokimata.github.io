@@ -14,50 +14,71 @@
     <style>
       /* ---------- GLOBAL STYLES ---------- */
       :root {
-        --primary: #004d99; /* deep blue – feel free to change */
-        --accent: #ff6600; /* orange accent */
+        --primary: #004d99;
+        --accent: #ff6600;
         --bg: #f9f9f9;
         --text: #333;
+        --muted: #666;
         --link-hover: #e60000;
+        --card-bg: #fff;
+        --border: #e6e6e6;
+      }
+
+      * {
+        box-sizing: border-box;
       }
 
       body {
         margin: 0;
-        font-family: "Roboto", sans-serif;
+        font-family:
+          "Roboto",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
         background-color: var(--bg);
         color: var(--text);
         line-height: 1.6;
       }
+
       a {
         color: var(--primary);
         text-decoration: none;
       }
+
       a:hover,
       a:focus {
         color: var(--link-hover);
+        text-decoration: underline;
       }
 
+      /* ---------- HEADER ---------- */
       header {
         background: var(--primary);
         color: #fff;
-        padding: 2rem 0;
+        padding: 2rem 1rem;
         text-align: center;
       }
+
       header h1 {
         margin: 0.5rem 0;
         font-size: 2.8rem;
+        line-height: 1.15;
       }
+
       header p {
         margin: 0;
         font-weight: 300;
+        line-height: 1.5;
       }
+
+      /* ---------- LAYOUT ---------- */
       .container {
-        color: #333; /* デフォルトを本文色に */
         width: 90%;
         max-width: 960px;
         margin: 2rem auto;
-        padding: 1rem;
-        background: #fff;
+        padding: 1.5rem;
+        background: var(--card-bg);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
         border-radius: 6px;
       }
@@ -68,6 +89,7 @@
         flex-wrap: wrap;
         align-items: center;
       }
+
       .about img {
         width: 180px;
         height: 180px;
@@ -76,41 +98,67 @@
         object-fit: cover;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
       }
+
       .about div {
         flex: 1;
         min-width: 250px;
       }
 
-      /* ---------- RESEARCH SECTION ---------- */
+      /* ---------- SECTION TITLES ---------- */
       .section-title {
         font-size: 1.6rem;
         margin-top: 1.5rem;
+        margin-bottom: 0.8rem;
         color: var(--primary);
         border-bottom: 2px solid var(--accent);
         display: inline-block;
         padding-bottom: 4px;
       }
+
+      /* ---------- LIST SECTIONS ---------- */
       .research-list,
       .presentation-list,
       .teaching-list {
         list-style: none;
         padding-left: 0;
+        margin-top: 1rem;
+        margin-bottom: 0;
       }
 
       .research-list li,
       .presentation-list li,
       .teaching-list li {
-        margin-bottom: 1rem;
+        margin-bottom: 1.1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid var(--border);
       }
 
-      .research-list li::before,
-      .presentation-list li::before,
-      .teaching-list li::before {
-        content: "•";
-        margin-right: 0.1rem;
-        padding-left: 0.1rem;
-        color: var(--accent);
-        font-weight: bold;
+      .research-list li:last-child,
+      .presentation-list li:last-child,
+      .teaching-list li:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .paper-title {
+        display: block;
+        font-weight: 700;
+        line-height: 1.45;
+        margin-bottom: 0.25rem;
+      }
+
+      .note {
+        display: block;
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+
+      .research-list a,
+      .presentation-list a,
+      .teaching-list a {
+        display: inline-block;
+        margin-top: 0.25rem;
       }
 
       /* ---------- CONTACT SECTION ---------- */
@@ -120,6 +168,7 @@
         font-size: 1.8rem;
         color: #555;
       }
+
       .contact-icons a:hover {
         color: var(--primary);
       }
@@ -127,7 +176,7 @@
       /* ---------- FOOTER ---------- */
       footer {
         text-align: center;
-        padding: 1rem 0;
+        padding: 1rem;
         background: #eee;
         margin-top: 2rem;
         font-size: 0.9rem;
@@ -135,12 +184,27 @@
 
       /* ---------- RESPONSIVE ---------- */
       @media (max-width: 600px) {
-        .about {
-          flex-direction: column;
-          align-items: flex-start;
+        .research-list,
+        .presentation-list,
+        .teaching-list {
+          margin-top: 0.8rem;
         }
-        .about img {
-          margin-bottom: 1rem;
+
+        .research-list li,
+        .presentation-list li,
+        .teaching-list li {
+          margin-bottom: 1.2rem;
+          padding-bottom: 1rem;
+        }
+
+        .paper-title {
+          font-size: 1rem;
+          line-height: 1.45;
+        }
+
+        .note {
+          font-size: 0.9rem;
+          line-height: 1.5;
         }
       }
     </style>
@@ -183,12 +247,10 @@
             <span class="paper-title">
               Trade Elasticities for CGE Simulation: Case of U.S. Tariff Shocks
             </span>
-            <br />
             <span class="note">
               Yutaro Kimata and Ken Itakura. Revise and resubmit, Journal of
               Economic Structures.
             </span>
-            <br />
             <a
               href="https://www.researchgate.net/publication/400566113_Trade_Elasticities_for_CGE_Simulation_Case_of_US_Tariff_Shocks"
               target="_blank"
@@ -200,12 +262,10 @@
 
           <li>
             <span class="paper-title"> Economic Impact of RCEP </span>
-            <br />
             <span class="note">
               Ken Itakura, Yutaro Kimata, and Shujiro Urata. RIETI Discussion
               Paper 26-E-029, April 2026.
             </span>
-            <br />
             <a
               href="https://www.rieti.go.jp/en/publications/summary/26040008.html"
               target="_blank"
@@ -219,7 +279,6 @@
             <span class="paper-title">
               Analysis on the expansion of CPTPP by the GDyn with OECD-ICIO
             </span>
-            <br />
             <span class="note"> Work in progress. </span>
           </li>
 
@@ -228,7 +287,6 @@
               Digital Trade Provisions and Intermediate Goods Trade: Evidence
               from Gravity Estimation
             </span>
-            <br />
             <span class="note"> Work in progress. </span>
           </li>
         </ul>
@@ -241,7 +299,6 @@
         <ul class="presentation-list">
           <li>
             <span class="paper-title"> Economic Impact of RCEP </span>
-            <br />
             <span class="note">
               Japan Society of International Economics, Spring Meeting, June
               2026.
@@ -251,7 +308,6 @@
             <span class="paper-title">
               Trade Elasticities for CGE Simulation: Case of U.S. Tariff Shocks
             </span>
-            <br />
             <span class="note">
               Japan Society of International Economics, 84th Annual Meeting,
               October 2025.
@@ -262,7 +318,6 @@
             <span class="paper-title">
               Estimating HS6-Level Trade Elasticities Using Structural Gravity
             </span>
-            <br />
             <span class="note">
               Japan Society of International Economics, Chubu Branch Spring
               Meeting, July 2025.
@@ -273,7 +328,6 @@
             <span class="paper-title">
               Trade Effect of E-Commerce Agreements: Gravity Model Estimation
             </span>
-            <br />
             <span class="note">
               Japan Society of International Economics, Spring Meeting, June
               2024.
@@ -285,7 +339,6 @@
               Impact of E-Commerce Agreements on the Global Economy: A Dynamic
               CGE Analysis
             </span>
-            <br />
             <span class="note">
               The 9th International Conference on Economic Structures, March
               2024; Japan Society of International Economics, Spring Meeting,
@@ -298,7 +351,6 @@
               Impact of E-Commerce Agreements on the Global Economy: A Dynamic
               CGE Analysis
             </span>
-            <br />
             <span class="note">
               The 9th International Conference on Economic Structures, March
               2024. Presented by Ken Itakura.
@@ -314,7 +366,6 @@
         <ul class="teaching-list">
           <li>
             <span class="paper-title"> Mathematics for Economics </span>
-            <br />
             <span class="note">
               Part-time Lecturer, Nihon Fukushi University, Spring 2026.
             </span>
@@ -322,7 +373,6 @@
 
           <li>
             <span class="paper-title"> Teaching Assistant, World Economy </span>
-            <br />
             <span class="note">
               Nagoya City University, Fall 2025. Assisted with lecture materials
               and data preparation.
@@ -333,7 +383,6 @@
             <span class="paper-title">
               Teaching Assistant, International Economic Relations I
             </span>
-            <br />
             <span class="note">
               Nagoya City University, Spring 2025. Assisted with lecture
               materials and data preparation.
