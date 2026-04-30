@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Yutaro Kimata – Ph.D. Student, Economics</title>
+    <title>Yutaro Kimata – Ph.D. Student in Economics</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Google Fonts -->
@@ -10,11 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Font Awesome for icons -->
-    <script
-      src="https://kit.fontawesome.com/your-kit-id.js"
-      crossorigin="anonymous"
-    ></script>
 
     <style>
       /* ---------- GLOBAL STYLES ---------- */
@@ -95,14 +90,22 @@
         display: inline-block;
         padding-bottom: 4px;
       }
-      ul {
+      .research-list,
+      .presentation-list,
+      .teaching-list {
         list-style: none;
         padding-left: 0;
       }
-      li {
-        margin-bottom: 0.6rem;
+
+      .research-list li,
+      .presentation-list li,
+      .teaching-list li {
+        margin-bottom: 1rem;
       }
-      li::before {
+
+      .research-list li::before,
+      .presentation-list li::before,
+      .teaching-list li::before {
         content: "•";
         margin-right: 0.1rem;
         padding-left: 0.1rem;
@@ -158,14 +161,14 @@
         <div class="about">
           <!-- <img src="your-photo.jpg" alt="Photo of Yutaro Kimata" /> -->
           <div>
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">About</h2>
             <p>
-              My name is <strong>Yutaro Kimata</strong>, and I am a Ph.D.
-              student in Economics at <strong>Nagoya City University</strong> in
-              Japan. My research focuses on international trade and its
-              implications for economic welfare, with particular interest in how
-              trade agreements, tariff policies, and technological change
-              influence outcomes across countries.
+              I am a Ph.D. student in Economics at Nagoya City University. My
+              research focuses on international trade policy, structural
+              gravity, and applied general equilibrium analysis. I study how
+              tariffs, regional trade agreements, and global value chain
+              linkages affect trade and welfare, using both econometric and
+              simulation-based approaches.
             </p>
           </div>
         </div>
@@ -173,41 +176,179 @@
 
       <!-- RESEARCH -->
       <section id="research">
-        <h2 class="section-title">Research Focus</h2>
-        <ul>
+        <h2 class="section-title">Research</h2>
+
+        <ul class="research-list">
           <li>
-            <strong>Causal Inference</strong>: I analyze how trade policy
-            interventions, such as the formation of regional trade agreements or
-            the imposition of tariffs, causally affect international trade
-            flows. My work employs Difference-in-Differences and related
-            econometric approaches to provide credible identification of policy
-            impacts.
+            <span class="paper-title">
+              Trade Elasticities for CGE Simulation: Case of U.S. Tariff Shocks
+            </span>
+            <br />
+            <span class="note">
+              Yutaro Kimata and Ken Itakura. Revise and resubmit, Journal of
+              Economic Structures.
+            </span>
+            <br />
+            <a
+              href="https://www.researchgate.net/publication/400566113_Trade_Elasticities_for_CGE_Simulation_Case_of_US_Tariff_Shocks"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Working paper
+            </a>
+          </li>
+
+          <li>
+            <span class="paper-title"> Economic Impact of RCEP </span>
+            <br />
+            <span class="note">
+              Ken Itakura, Yutaro Kimata, and Shujiro Urata. RIETI Discussion
+              Paper 26-E-029, April 2026.
+            </span>
+            <br />
+            <a
+              href="https://www.rieti.go.jp/en/publications/summary/26040008.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              RIETI publication page
+            </a>
+          </li>
+
+          <li>
+            <span class="paper-title">
+              Analysis on the expansion of CPTPP by the GDyn with OECD-ICIO
+            </span>
+            <br />
+            <span class="note"> Work in progress. </span>
+          </li>
+
+          <li>
+            <span class="paper-title">
+              Digital Trade Provisions and Intermediate Goods Trade: Evidence
+              from Gravity Estimation
+            </span>
+            <br />
+            <span class="note"> Work in progress. </span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- PRESENTATIONS -->
+      <section id="presentations">
+        <h2 class="section-title">Presentations</h2>
+
+        <ul class="presentation-list">
+          <li>
+            <span class="paper-title"> Economic Impact of RCEP </span>
+            <br />
+            <span class="note">
+              Japan Society of International Economics, Spring Meeting, June
+              2026.
+            </span>
           </li>
           <li>
-            <strong>Structural Gravity</strong>: I structurally estimate trade
-            elasticities to uncover how sensitive trade flows are to changes in
-            trade costs. This research provides the empirical foundation for
-            counterfactual policy analysis and connects observed trade patterns
-            with theory-based parameters.
+            <span class="paper-title">
+              Trade Elasticities for CGE Simulation: Case of U.S. Tariff Shocks
+            </span>
+            <br />
+            <span class="note">
+              Japan Society of International Economics, 84th Annual Meeting,
+              October 2025.
+            </span>
           </li>
+
           <li>
-            <strong>New Quantitative Trade</strong>: I develop and apply
-            multi-country, multi-sector Ricardian general equilibrium models to
-            quantify the welfare and production effects of policy shocks. In
-            particular, I investigate how emerging technologies such as AI
-            reshape comparative advantage and global welfare through
-            international trade.
+            <span class="paper-title">
+              Estimating HS6-Level Trade Elasticities Using Structural Gravity
+            </span>
+            <br />
+            <span class="note">
+              Japan Society of International Economics, Chubu Branch Spring
+              Meeting, July 2025.
+            </span>
+          </li>
+
+          <li>
+            <span class="paper-title">
+              Trade Effect of E-Commerce Agreements: Gravity Model Estimation
+            </span>
+            <br />
+            <span class="note">
+              Japan Society of International Economics, Spring Meeting, June
+              2024.
+            </span>
+          </li>
+
+          <li>
+            <span class="paper-title">
+              Impact of E-Commerce Agreements on the Global Economy: A Dynamic
+              CGE Analysis
+            </span>
+            <br />
+            <span class="note">
+              The 9th International Conference on Economic Structures, March
+              2024; Japan Society of International Economics, Spring Meeting,
+              June 2024. Presented by Ken Itakura.
+            </span>
+          </li>
+
+          <li>
+            <span class="paper-title">
+              Impact of E-Commerce Agreements on the Global Economy: A Dynamic
+              CGE Analysis
+            </span>
+            <br />
+            <span class="note">
+              The 9th International Conference on Economic Structures, March
+              2024. Presented by Ken Itakura.
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- TEACHING -->
+      <section id="teaching">
+        <h2 class="section-title">Teaching</h2>
+
+        <ul class="teaching-list">
+          <li>
+            <span class="paper-title"> Mathematics for Economics </span>
+            <br />
+            <span class="note">
+              Part-time Lecturer, Nihon Fukushi University, Spring 2026.
+            </span>
+          </li>
+
+          <li>
+            <span class="paper-title"> Teaching Assistant, World Economy </span>
+            <br />
+            <span class="note">
+              Nagoya City University, Fall 2025. Assisted with lecture materials
+              and data preparation.
+            </span>
+          </li>
+
+          <li>
+            <span class="paper-title">
+              Teaching Assistant, International Economic Relations I
+            </span>
+            <br />
+            <span class="note">
+              Nagoya City University, Spring 2025. Assisted with lecture
+              materials and data preparation.
+            </span>
           </li>
         </ul>
       </section>
 
       <!-- CONTACT -->
       <section id="contact">
-        <h2 class="section-title">Get In Touch</h2>
+        <h2 class="section-title">Contact</h2>
         <p>Email: kimata.yutaro [at] gmail.com</p>
       </section>
     </div>
 
-    <footer>© 2025 Yutaro Kimata – All rights reserved</footer>
+    <footer>© 2026 Yutaro Kimata – All rights reserved</footer>
   </body>
 </html>
