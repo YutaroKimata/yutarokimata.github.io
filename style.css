@@ -111,6 +111,7 @@ header p {
 /* ---------- LIST SECTIONS ---------- */
 .research-list,
 .presentation-list,
+.experience-list,
 .teaching-list {
   list-style: none;
   padding-left: 0;
@@ -120,6 +121,7 @@ header p {
 
 .research-list li,
 .presentation-list li,
+.experience-list li,
 .teaching-list li {
   margin-bottom: 1.1rem;
   padding-bottom: 1rem;
@@ -128,6 +130,7 @@ header p {
 
 .research-list li:last-child,
 .presentation-list li:last-child,
+.experience-list li:last-child,
 .teaching-list li:last-child {
   border-bottom: none;
   padding-bottom: 0;
@@ -149,6 +152,7 @@ header p {
 
 .research-list a,
 .presentation-list a,
+.experience-list a,
 .teaching-list a {
   display: inline-block;
   margin-top: 0.25rem;
@@ -179,12 +183,14 @@ footer {
 @media (max-width: 600px) {
   .research-list,
   .presentation-list,
+  .experience-list,
   .teaching-list {
     margin-top: 0.8rem;
   }
 
   .research-list li,
   .presentation-list li,
+  .experience-list li,
   .teaching-list li {
     margin-bottom: 1.2rem;
     padding-bottom: 1rem;
