@@ -113,7 +113,7 @@ header p {
 .presentation-list,
 .experience-list,
 .teaching-list,
-.project-list {
+.code-list {
   list-style: none;
   padding-left: 0;
   margin-top: 1rem;
@@ -124,7 +124,7 @@ header p {
 .presentation-list li,
 .experience-list li,
 .teaching-list li,
-.project-list li {
+.code-list li {
   margin-bottom: 1.1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--border);
@@ -134,7 +134,7 @@ header p {
 .presentation-list li:last-child,
 .experience-list li:last-child,
 .teaching-list li:last-child,
-.project-list li:last-child {
+.code-list li:last-child {
   border-bottom: none;
   padding-bottom: 0;
 }
@@ -157,7 +157,7 @@ header p {
 .presentation-list a,
 .experience-list a,
 .teaching-list a,
-.project-list a {
+.code-list a {
   display: inline-block;
   margin-top: 0.25rem;
 }
@@ -189,7 +189,7 @@ footer {
   .presentation-list,
   .experience-list,
   .teaching-list,
-  .project-list {
+  .code-list {
     margin-top: 0.8rem;
   }
 
@@ -197,7 +197,7 @@ footer {
   .presentation-list li,
   .experience-list li,
   .teaching-list li,
-  .project-list li {
+  .code-list li {
     margin-bottom: 1.2rem;
     padding-bottom: 1rem;
   }
